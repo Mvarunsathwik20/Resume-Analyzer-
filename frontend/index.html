@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <section class="card upload-card">
+      <h1>AI Resume Analyzer</h1>
+      <p>Upload a PDF resume to get a structured report with skills and improvement suggestions.</p>
+      <form id="uploadForm">
+        <input id="email" type="email" placeholder="Optional: your email to receive the report" />
+        <input id="fileInput" type="file" accept="application/pdf" />
+        <button id="submitBtn" type="submit">Analyze Resume</button>
+      </form>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="report" class="card report-card hidden">
+      <button id="backBtn" class="link">← New analysis</button>
+      <h2>Analysis Report</h2>
+      <div id="reportContent"></div>
+    </section>
+  </main>
+</body>
+</html>
+
+
